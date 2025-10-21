@@ -1,2 +1,2 @@
-# POO
+# PORGRAMACION ORIENTADA A ONJETOS 
 deberes de poo
