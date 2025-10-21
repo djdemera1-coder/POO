@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("=== Crear un Coche ===");
+        System.out.print("Marca: ");
+        String marcaC = sc.nextLine();
+        System.out.print("Modelo: ");
+        String modeloC = sc.nextLine();
+        System.out.print("Año: ");
+        int añoC = sc.nextInt();
+        System.out.print("Número de puertas: ");
+        int puertas = sc.nextInt();
+
+        Coche coche = new Coche(marcaC, modeloC, añoC, puertas);
+
+        sc.nextLine(); // limpiar buffer
+
+        System.out.println("\n=== Crear una Moto ===");
+        System.out.print("Marca: ");
+        String marcaM = sc.nextLine();
+        System.out.print("Modelo: ");
+        String modeloM = sc.nextLine();
+        System.out.print("Año: ");
+        int añoM = sc.nextInt();
+        System.out.print("Cilindraje: ");
+        int cilindraje = sc.nextInt();
+
+        Moto moto = new Moto(marcaM, modeloM, añoM, cilindraje);
+
+        System.out.println("\n=== Información del Coche ===");
+        coche.mostrarInfo();
+        coche.tocarBocina();
+
+        System.out.println("\n=== Información de la Moto ===");
+        moto.mostrarInfo();
+        moto.hacerCaballito();
+    }
+}
